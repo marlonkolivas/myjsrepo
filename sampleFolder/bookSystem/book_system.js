@@ -36,6 +36,11 @@ function showbooks() {
     );
     document.getElementById('books').innerHTML = booksDiv.join('');
 }
+// Delete function to remove a book by index
+function deleteBook(index) {
+    books.splice(index, 1); // Remove the book at the given index
+    showbooks(); // Update the display after deletion
+}
 function clearInputs() {
     document.getElementById('bookName').value = '';
     document.getElementById('authorName').value = '';
