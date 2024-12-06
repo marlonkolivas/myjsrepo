@@ -47,3 +47,4 @@ function startTest() {
                 button.innerHTML = "Start Test";
                 button.onclick = startTest;
             }
+          
